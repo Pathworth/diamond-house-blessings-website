@@ -36,7 +36,7 @@ Supporting files: `assets/css/site.css` (all styling), `assets/js/site.js` (all 
 
 1. **Keep the owner's voice.** Do not rewrite or "improve" her words. Change only what she asks.
 2. **No em dashes anywhere.** Use commas, periods, or colons. (The short hyphen in "year-round" or "re-entry" is fine.)
-3. **Color rule.** Champagne gold is for headlines and accent words only. Body text stays warm off-white. Do not recolor anything else.
+3. **Color rule.** The site is warm and light: an ivory canvas with dark charcoal text for easy reading. Green is the action color (buttons, links). Champagne gold is a brand accent for eyebrows, icons, and headline words only. Do not recolor anything else, and never put light text on a light background.
 4. **Never publish the property address.** Addresses are shared only after screening. The site must never list a street address publicly. This is a safety and privacy rule for residents.
 5. **Fair housing.** Keep the welcoming, inclusive tone. Never add language that excludes people by race, color, religion, sex, national origin, family status, or disability. Eligibility is about income, a background check, and respect for the home.
 6. **Make the smallest change that does the job.** Do not redesign or refactor `site.css` / `site.js` unless she explicitly asks.
