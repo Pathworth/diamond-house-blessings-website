@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/site.css?v=3" />
+<link rel="stylesheet" href="assets/css/site.css?v=4" />
 </head>
 <body>
 <div class="aura"></div>
@@ -37,7 +37,7 @@
     <p class="eyebrow reveal in">Contact &amp; availability</p>
     <h1 class="balance reveal in mw-66" style="margin-top:1.4rem">Let's find you <span class="serif-italic shine">a place to call home.</span></h1>
     <p class="lede muted reveal in mw-58" style="margin-top:1.6rem">
-      Share a little information below and someone will reach out with availability, pricing, and next steps.
+      Share a little information below to get started, and someone will reach out with the next steps.
       There is no cost and no commitment to inquire.
     </p>
   </div>
@@ -64,6 +64,12 @@
           <div class="tname" style="color:var(--gold-2);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.4em">Service area</div>
           <p style="font-family:var(--ff-display);font-size:clamp(1.2rem,2vw,1.6rem);line-height:1.3">Detroit, Michigan</p>
           <p class="muted" style="font-size:.9rem;margin-top:.6em;max-width:34ch">Property locations are shared only after initial screening, to protect the privacy and safety of our residents.</p>
+        </div>
+        <hr class="rule">
+        <div>
+          <div class="tname" style="color:var(--gold-2);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.4em">Schedule a tour</div>
+          <p class="muted" style="font-size:.95rem;max-width:36ch">You are welcome to tour a home before moving in. We welcome individuals seeking housing, along with social workers and case managers, to walk through during business hours.</p>
+          <p style="font-family:var(--ff-display);font-size:clamp(1.1rem,1.9vw,1.4rem);line-height:1.4;margin-top:.5em">Monday to Friday, 9am to 5pm<br><span class="muted" style="font-family:var(--ff-body);font-size:.9rem">Closed Saturday and Sunday</span></p>
         </div>
         <hr class="rule">
         <div>
@@ -124,14 +130,17 @@
               </span>
             </span>
 
-            <span class="field">
-              <label for="income">Do you have a source of income?</label>
-              <select id="income" name="Source of income">
-                <option value="Yes">Yes</option>
-                <option value="Not yet">Not yet</option>
-                <option value="Prefer to discuss">Prefer to discuss</option>
-              </select>
-            </span>
+            <div class="field-row">
+              <span class="field">
+                <label for="income">Do you have a source of income?</label>
+                <select id="income" name="Source of income">
+                  <option value="Yes">Yes</option>
+                  <option value="Not yet">Not yet</option>
+                  <option value="Prefer to discuss">Prefer to discuss</option>
+                </select>
+              </span>
+              <span class="field"><label for="referred">Who referred you?</label><input id="referred" name="Who referred you" type="text" placeholder="Website, a social worker's name, a friend..."></span>
+            </div>
 
             <span class="field"><label for="msg">Anything else we should know?</label><textarea id="msg" name="Message"></textarea></span>
 
