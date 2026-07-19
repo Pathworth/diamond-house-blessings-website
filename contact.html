@@ -10,14 +10,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/site.css?v=6" />
+<link rel="stylesheet" href="assets/css/site.css?v=7" />
 </head>
 <body>
 <div class="aura"></div>
 
 <header class="nav">
   <a class="brand" href="index.html" aria-label="Diamond House Blessings home">
-    <img class="mark mark-white" src="assets/img/logo-white.png" alt="Diamond House Blessings" /><img class="mark mark-black" src="assets/img/logo-black.png" alt="Diamond House Blessings" />
+    <img class="mark mark-white" src="assets/img/logo-white.png" alt="Diamond House Blessings" /><img class="mark mark-black" src="assets/img/logo-black.png?v=2" alt="Diamond House Blessings" />
     <span class="name">Diamond House Blessings<small>Detroit · Shared Housing</small></span>
   </a>
   <nav class="nav-links" aria-label="Primary">
@@ -141,8 +141,24 @@
                   <option value="Prefer to discuss">Prefer to discuss</option>
                 </select>
               </span>
-              <span class="field"><label for="referred">Who referred you?</label><input id="referred" name="Who referred you" type="text" placeholder="Website, a social worker's name, a friend..."></span>
+              <span class="field">
+                <label for="hearabout">How did you hear about us?</label>
+                <select id="hearabout" name="How did you hear about us">
+                  <option value="">Select one</option>
+                  <option value="Website">Website</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Social media">Social media</option>
+                  <option value="Flyer">Flyer</option>
+                  <option value="Social worker or case manager">Social worker or case manager</option>
+                  <option value="Agency or group">Agency or group</option>
+                  <option value="School">School</option>
+                  <option value="Friend or family">Friend or family</option>
+                  <option value="Other">Other</option>
+                </select>
+              </span>
             </div>
+
+            <span class="field"><label for="referrername">Referrer's name (if someone referred you)</label><input id="referrername" name="Referrer name" type="text" placeholder="For example, the social worker or person who referred you"></span>
 
             <span class="field"><label for="msg">Anything else we should know?</label><textarea id="msg" name="Message"></textarea></span>
 
@@ -164,7 +180,7 @@
     <div class="foot-grid">
       <div>
         <a class="brand" href="index.html" style="margin-bottom:1.1rem">
-          <img class="mark mark-white" src="assets/img/logo-white.png" alt="Diamond House Blessings" /><img class="mark mark-black" src="assets/img/logo-black.png" alt="Diamond House Blessings" />
+          <img class="mark mark-white" src="assets/img/logo-white.png" alt="Diamond House Blessings" /><img class="mark mark-black" src="assets/img/logo-black.png?v=2" alt="Diamond House Blessings" />
           <span class="name">Diamond House Blessings<small>Detroit · Shared Housing</small></span>
         </a>
         <p class="muted" style="max-width:36ch;font-size:.92rem">Safe, stable, and supportive shared housing for adults in the Detroit area. Property locations are shared only after initial screening, to protect the privacy and safety of our residents.</p>
