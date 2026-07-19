@@ -40,6 +40,18 @@
     revealEls.forEach(function (el) { el.classList.add("in"); });
   }
 
+  /* ---- Background videos: nudge autoplay (muted policies allow this) ---- */
+  document.querySelectorAll(".hero-vid, .phero-vid").forEach(function (v) {
+    v.muted = true;
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {
+      // Fall back to playing on first interaction if autoplay is blocked
+      var once = function () { v.play().catch(function () {}); window.removeEventListener("touchstart", once); window.removeEventListener("click", once); };
+      window.addEventListener("touchstart", once, { passive: true });
+      window.addEventListener("click", once);
+    });
+  });
+
   /* ---- Hero lines ---- */
   window.addEventListener("load", function () {
     setTimeout(function () {

@@ -9,14 +9,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/site.css?v=2" />
+<link rel="stylesheet" href="assets/css/site.css?v=3" />
 </head>
 <body>
 <div class="aura"></div>
 
 <header class="nav">
   <a class="brand" href="index.html" aria-label="Diamond House Blessings home">
-    <img class="mark" src="assets/img/logo.svg" alt="Diamond House Blessings" />
+    <img class="mark mark-white" src="assets/img/logo-white.png" alt="Diamond House Blessings" /><img class="mark mark-black" src="assets/img/logo-black.png" alt="Diamond House Blessings" />
     <span class="name">Diamond House Blessings<small>Detroit · Shared Housing</small></span>
   </a>
   <nav class="nav-links" aria-label="Primary">
@@ -31,18 +31,20 @@
 </header>
 
 <main>
-<section class="center-hero wrap">
-  <div>
-    <img src="assets/img/logo.svg" alt="" aria-hidden="true" style="width:110px;margin:0 auto 1.6rem;opacity:.9" />
+<section class="phero" style="min-height:100svh;display:grid;place-items:center;text-align:center">
+  <video class="phero-vid" autoplay muted loop playsinline preload="auto"><source src="assets/video/dh-loop.mp4" type="video/mp4"></video>
+  <span class="phero-veil"></span>
+  <div class="wrap">
+    <img src="assets/img/logo-white.png" alt="" aria-hidden="true" style="width:120px;margin:0 auto 1.6rem" />
     <p class="eyebrow center" style="justify-content:center;margin-bottom:1.4rem">Inquiry received</p>
     <h1 class="balance" style="max-width:16ch;margin:0 auto">Thank you. <span class="shine serif-italic">We will be in touch.</span></h1>
-    <p class="lede muted mw-52 mx-auto" style="margin-top:1.6rem">
+    <p class="lede mw-52 mx-auto" style="margin-top:1.6rem;color:rgba(246,244,239,.72)">
       Someone from Diamond House Blessings will reach out soon with availability, pricing, and next steps.
-      If you need us sooner, call <a href="tel:+19472817921" style="color:var(--gold-2)">(947) 281-7921</a>.
+      If you need us sooner, call <a href="tel:+19472817921" style="color:#fff">(947) 281-7921</a>.
     </p>
     <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:2.4rem">
-      <a class="btn btn-primary" href="index.html">Back to home</a>
-      <a class="btn btn-ghost" href="faq.html">Read the FAQ</a>
+      <a class="btn btn-white" href="index.html">Back to home</a>
+      <a class="btn btn-ghost-light" href="faq.html">Read the FAQ</a>
     </div>
   </div>
 </section>
@@ -58,6 +60,6 @@
   </div>
 </footer>
 
-<script src="assets/js/site.js?v=2" defer></script>
+<script src="assets/js/site.js?v=3" defer></script>
 </body>
 </html>
